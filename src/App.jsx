@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
-import SimpleLogin from './example/SimpleLogin'
-import TwoWayBinding from './example/TwoWayBinding'
+import Calculator from './example/Calculator'
 class App extends Component {
   constructor(props) {
     super(props)
   }
   render() {
-    return (<div></div>)
+    return (<div>
+      <Calculator></Calculator>
+    </div>)
   }
 }
 export default App
