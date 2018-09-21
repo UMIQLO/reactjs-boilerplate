@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TodoApp from './TodoApp/TodoApp'
 
 class App extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class App extends React.Component {
   }
   render() {
     return (<div>
-      Hello World
+      <TodoApp/>
     </div>)
   }
 }
