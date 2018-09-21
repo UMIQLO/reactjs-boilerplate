@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {connect} from 'react-redux'
+import TodoInput from './TodoApp/components/TodoInput'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      todoInput: ''
+    }
   }
   render() {
-    return (<div>Hello World</div>)
+    return (<div>
+      <TodoInput/>
+    </div>)
   }
 }
-export default App
+
+const mapStateToProps = (state) => {
+  return {todoInput: state.todoInput}
+}
+
+export default connect(mapStateToProps)(App);
