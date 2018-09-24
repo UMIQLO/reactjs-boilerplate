@@ -4,8 +4,11 @@ import {connect} from 'react-redux'
 class TodoList extends React.Component {
   constructor(props) {
     super(props)
+    this.toggleTodoStatus = this.toggleTodoStatus.bind(this)
   }
-
+  toggleTodoStatus(e) {
+    this.props.dispatch({type: 'TOGGLE_ITEM', id: e.target.getAttribute('data-id')})
+  }
   render() {
     const todo = this.props.todoList
     return (<div>
@@ -18,7 +21,7 @@ class TodoList extends React.Component {
               todo.map((item, index) => {
                 return (<tr key={index}>
                   <td>{item.title}</td>
-                  <td><input type="checkbox" checked={item.isFinish}/></td>
+                  <td><input type="checkbox" checked={item.isFinish} onChange={this.toggleTodoStatus} data-id={index}/></td>
                 </tr>)
               })
             }

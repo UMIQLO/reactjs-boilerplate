@@ -21,6 +21,10 @@ const todoAppReducer = (state = initalState, action) => {
         ]
       }
     case 'TOGGLE_ITEM':
+      console.log(action.id)
+      return {
+        ...state
+      }
     default:
       return state
   }
