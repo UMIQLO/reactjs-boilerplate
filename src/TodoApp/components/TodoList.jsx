@@ -18,6 +18,7 @@ class TodoList extends React.Component {
               todo.map((item, index) => {
                 return (<tr key={index}>
                   <td>{item.title}</td>
+                  <td><input type="checkbox" checked={item.isFinish}/></td>
                 </tr>)
               })
             }
