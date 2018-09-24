@@ -1,9 +1,17 @@
-const todoReducer = (state = {}, action) => {
+// init global state
+const initalState = {
+  todoList: [
+    {
+      "title": 'Test 1'
+    }
+  ],
+  todoInput: "todoInput"
+}
+
+const todoAppReducer = (state = initalState, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      return {todo: action.todo}
     default:
       return state
   }
 }
-export default todoReducer
+export default todoAppReducer

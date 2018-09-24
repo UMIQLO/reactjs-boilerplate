@@ -1,24 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {connect} from 'react-redux'
-import TodoInput from './TodoApp/components/TodoInput'
+import Counter from './Counter/components/Counter'
+import TodoApp from './TodoApp/TodoApp'
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      todoInput: ''
-    }
-  }
   render() {
     return (<div>
-      <TodoInput/>
+      <TodoApp/>
+      <hr/>
+      <Counter/>
     </div>)
   }
 }
 
-const mapStateToProps = (state) => {
-  return {todoInput: state.todoInput}
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
