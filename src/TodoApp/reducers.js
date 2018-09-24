@@ -21,9 +21,15 @@ const todoAppReducer = (state = initalState, action) => {
         ]
       }
     case 'TOGGLE_ITEM':
-      console.log(action.id)
+      let todoList = state.todoList
+      todoList.forEach((element, index) => {
+        if (index == action.id) {
+          todoList[index].isFinish = !todoList[index].isFinish;
+        }
+      });
       return {
-        ...state
+        ...state,
+        todoList: todoList
       }
     default:
       return state
