@@ -9,7 +9,7 @@ class TodoApp extends React.Component {
   render() {
     return (<div>
       <TodoList/>
-      <TodoInput/>
+      <TodoInput test='fuck'/>
     </div>)
   }
 }

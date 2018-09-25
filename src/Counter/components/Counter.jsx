@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {increaseCounter, decreaseCouter} from '../actions'
 
-class Counter extends React.Component {
+class Counter extends Component {
 
     constructor(props) {
         super(props)
@@ -10,19 +11,20 @@ class Counter extends React.Component {
     }
 
     increase() {
-        this.props.dispatch({type: 'INCREASE'})
+        this.props.increase()
     }
 
     decrease() {
-        this.props.dispatch({type: 'DECREASE'})
+        this.props.decrease()
     }
 
     render() {
+        const {counter} = this.props
         return (<div>
             <p>Counter</p>
             <p>
                 <input type="button" value="-1" onClick={this.decrease}/>
-                <span>{this.props.counter}</span>
+                <span>{counter}</span>
                 <input type="button" value="+1" onClick={this.increase}/>
             </p>
         </div>)
@@ -33,4 +35,15 @@ const mapStateToProps = state => {
     return {counter: state.counterApp.counter}
 }
 
-export default connect(mapStateToProps)(Counter)
+const mapDispatchToProps = (dispatch) => {
+    return {
+        increase: () => {
+            dispatch(increaseCounter())
+        },
+        decrease: () => {
+            dispatch(decreaseCouter())
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter)

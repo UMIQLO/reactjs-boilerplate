@@ -12,15 +12,15 @@ class TodoList extends React.Component {
     }
 
     render() {
-
+        const {todoList, counter} = this.props
         return (<div>
-            <p>This value is from CounterApp: {this.props.counter}</p>
+            <p>This value is from CounterApp: {counter}</p>
             <fieldset>
                 <legend>TodoList</legend>
                 <table>
                     <tbody>
                     {
-                        this.props.todoList.map((item, index) => {
+                        todoList.map((item, index) => {
                             return (<tr key={index}>
                                 <td>{item.title}</td>
                                 <td><input type="checkbox" checked={item.isFinish} onChange={this.toggleTodoStatus}
