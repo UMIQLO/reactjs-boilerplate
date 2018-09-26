@@ -1,14 +1,14 @@
 import React from 'react'
 
 import TodoInputContainer from '../containers/TodoInputContainer'
-import TodoList from './TodoList'
+import TodoListContainer from '../containers/TodoListContainer'
 class TodoApp extends React.Component {
   constructor(props) {
     super(props)
   }
   render() {
     return (<div>
-      <TodoList/>
+      <TodoListContainer/>
       <TodoInputContainer/>
     </div>)
   }

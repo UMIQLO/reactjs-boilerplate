@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter/components/Counter'
-import TodoApp from './TodoApp/TodoApp'
+import CounterContainer from './Counter/containers/CounterContainer'
+import TodoApp from './TodoApp/components/TodoApp'
 
 class App extends React.Component {
   render() {
     return (<div>
       <TodoApp/>
       <hr/>
-      <Counter/>
+      <CounterContainer/>
     </div>)
   }
 }
