@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link, NavLink} from 'react-router-dom'
 
 import CounterContainer from './Counter/containers/CounterContainer'
 import TodoApp from './TodoApp/components/TodoApp'
@@ -11,17 +11,17 @@ class App extends React.Component {
       <div>
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
-            <Link to={'/todo'}>TodoApp</Link>
+            <NavLink to={'/todo'}>TodoApp</NavLink>
           </li>
           <li>
-            <Link to={'/counter'}>Counter</Link>
+            <NavLink to={'/counter'}>Counter</NavLink>
           </li>
         </ul>
         <Switch>
-          <Route exact path='/' component={home}/>
+          <Route exact={true} path='/' component={home}/>
           <Route path='/todo' component={TodoApp}/>
           <Route path='/counter' component={CounterContainer}/>
         </Switch>
