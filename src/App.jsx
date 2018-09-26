@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Switch, Route, Link, NavLink} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route, Link, NavLink} from 'react-router-dom'
 
 import CounterContainer from './Counter/containers/CounterContainer'
 import TodoApp from './TodoApp/components/TodoApp'
