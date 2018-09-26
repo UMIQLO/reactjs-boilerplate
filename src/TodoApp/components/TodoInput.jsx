@@ -6,7 +6,7 @@ const TodoInput = ({onAddTodo}) => {
   return (<div>
     <p><input type="text" ref={value => todoInput = value}/>
       <input type="button" value="Add" onClick={() => {
-          onAddTodo(todoInput.value)
+          (todoInput.value !== '') ? onAddTodo(todoInput.value) : ''
           todoInput.value = ''
         }}/></p>
   </div>)
