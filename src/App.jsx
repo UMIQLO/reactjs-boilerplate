@@ -9,7 +9,6 @@ class App extends React.Component {
   render() {
     return (<Router>
       <div>
-        <h5>Welcome to React.js</h5>
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -31,6 +30,8 @@ class App extends React.Component {
   }
 }
 
-const home = () => (<div>This is HomePage</div>)
+const home = () => (<div>
+  <h5>Welcome to React.js</h5>
+</div>)
 
 export default App;
