@@ -5,7 +5,7 @@ const TodoList = ({counter, todoList, onChangeStatus}) => {
   return (<div>
     <p>This value is from CounterApp: {counter}</p>
     <fieldset>
-      <legend>TodoList</legend>
+      <legend>TodoList (Total: {todoList.length})</legend>
       <table>
         <tbody>
           {

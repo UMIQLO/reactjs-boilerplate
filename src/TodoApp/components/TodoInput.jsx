@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 const TodoInput = ({onAddTodo}) => {
   let todoInput
   return (<div>
-    <p><input type="text" ref={node => todoInput = node}/>
+    <p><input type="text" ref={value => todoInput = value}/>
       <input type="button" value="Add" onClick={() => {
           onAddTodo(todoInput.value)
           todoInput.value = ''
@@ -13,3 +13,6 @@ const TodoInput = ({onAddTodo}) => {
 }
 
 export default TodoInput
+
+/** ref={value => todoInput = value} **/
+/** ref={(value) => {todoInput = value}} **/
