@@ -13,8 +13,11 @@ class TodoInput extends React.Component {
     }
 
     onAddTodo() {
-        this.props.onAddTodo(this.state.todoInput)
-        this.setState({todoInput: ''})
+        const todoInput = this.state.todoInput
+        if (todoInput !== '') {
+            this.props.onAddTodo(this.state.todoInput)
+            this.setState({todoInput: ''})
+        }
     }
 
     handleChange(event) {
@@ -25,7 +28,9 @@ class TodoInput extends React.Component {
         return (<div>
             <Menu fluid={true} vertical={true}>
                 <Menu.Item>
-                    <Input onChange={this.handleChange} value={this.state.todoInput} label={<Button color='teal' onClick={this.onAddTodo}>Add</Button>} labelPosition='right'/>
+                    <Input onChange={this.handleChange} value={this.state.todoInput} label={<Button color = 'teal' onClick = {
+                            this.onAddTodo
+                        } > Add</Button>} labelPosition='right'/>
                 </Menu.Item>
             </Menu>
         </div>)
