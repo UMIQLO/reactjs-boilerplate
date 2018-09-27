@@ -1,37 +1,77 @@
-import {ADD_ITEM, TOGGLE_ITEM, DELETE_ITEM, MARK_ALL_AS_DONE} from './actions'
+import {ADD_ITEM, TOGGLE_ITEM, DELETE_ITEM, MARK_ALL_AS_DONE, SORTING} from './actions'
 // init global state
-const initalState = []
+const initalState = [
+    {
+        title: 'Test 1',
+        isFinish: false
+    }, {
+        title: 'Test 2',
+        isFinish: false
+    }, {
+        title: 'Test 3',
+        isFinish: false
+    }, {
+        title: 'Test 4',
+        isFinish: false
+    }, {
+        title: 'Test 5',
+        isFinish: false
+    }
+]
 
 const todoAppReducer = (state = initalState, action) => {
-  switch (action.type) {
-    case ADD_ITEM:
-      {
-        return [
-          {
-            title: action.todoInput,
-            isFinish: false
-          },
-          ...state
-        ]
-      }
-    case DELETE_ITEM:
-      {
-        return state.splice(action.id, 1)
-      }
-    case TOGGLE_ITEM:
-      {
-        state[action.id].isFinish = !state[action.id].isFinish
-        return [...state]
-      }
-    case MARK_ALL_AS_DONE:
-      {
-        state.map((item, index) => {
-          return item.isFinish = true
-        })
-        return [...state]
-      }
-    default:
-      return state
-  }
+    switch (action.type) {
+        case ADD_ITEM:
+            {
+                return [
+                    {
+                        title: action.todoInput,
+                        isFinish: false
+                    },
+                    ...state
+                ]
+            }
+        case DELETE_ITEM:
+            {
+                state.splice(action.id, 1)
+                return [...state]
+            }
+        case TOGGLE_ITEM:
+            {
+                state[action.id].isFinish = !state[action.id].isFinish
+                return [...state]
+            }
+        case MARK_ALL_AS_DONE:
+            {
+                state.map((item, index) => {
+                    return item.isFinish = true
+                })
+                return [...state]
+            }
+        case SORTING:
+            {
+                switch (action.sortType) {
+                    case 'aToz':
+                        state.sort((a, b) => {
+                            return a.title > b.title
+                                ? 1
+                                : -1
+                        })
+                        return [...state]
+                    case 'zToa':
+                        state.sort((a, b) => {
+                            return b.title > a.title
+                                ? 1
+                                : -1
+                        })
+                        return [...state]
+                    default:
+                        return [...state]
+                }
+            }
+        default:
+            return state
+    }
 }
+
 export default todoAppReducer

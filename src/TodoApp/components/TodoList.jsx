@@ -1,38 +1,49 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import {Button, Table} from 'semantic-ui-react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faTrashAlt, faCheck, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
 
 const TodoList = ({counter, todoList, onChangeStatus, onDelete, markAllAsDone}) => {
-  return (<div>
-    <p>This value is from CounterApp: {counter}</p>
-    <fieldset>
-      <legend>TodoList (Total: {todoList.length})
-        <button onClick={markAllAsDone}>Mark All As Done</button>
-      </legend>
-      <table>
-        <tbody>
-          {
-            todoList.map((item, index) => {
-              return (<tr key={index} style={(
-                  item.isFinish)
-                  ? {
-                    color: 'green',
-                    textDecoration: 'line-through'
-                  }
-                  : {
-                    color: 'red'
-                  }}>
-                <td>{item.title}</td>
-                <td><input type="checkbox" checked={item.isFinish} onChange={() => onChangeStatus(index)}/></td>
-                <td><FontAwesomeIcon icon={faTimes} onClick={() => onDelete(index)}/></td>
-              </tr>)
-            })
-          }
-        </tbody>
-      </table>
-    </fieldset>
-  </div>)
+    return (<div>
+        <Table striped={true}>
+            <Table.Header>
+                <Table.Row>
+                    <Table.HeaderCell colSpan='2'>
+                        Todo List (Total: {todoList.length})
+                        <Button color='green' floated='right' compact={true} onClick={markAllAsDone}>Mark all as done</Button>
+                    </Table.HeaderCell>
+                </Table.Row>
+            </Table.Header>
+            <Table.Body>
+                {
+                    todoList.map((item, index) => {
+                        return (<Table.Row key={index}>
+                            <Table.Cell collapsing={true}>
+                                {item.title}
+                            </Table.Cell>
+                            <Table.Cell collapsing={true} textAlign='right'>
+                                <Button.Group size='small' floated='right' compact={true}>
+                                    <Button color={(
+                                            item.isFinish)
+                                            ? 'green'
+                                            : 'red'} onClick={() => onChangeStatus(index)}>
+                                        <FontAwesomeIcon icon={(
+                                                item.isFinish)
+                                                ? faCheckDouble
+                                                : faCheck}/>
+                                    </Button>
+                                    <Button.Or text='|'/>
+                                    <Button onClick={() => onDelete(index)}>
+                                        <FontAwesomeIcon icon={faTrashAlt}/>
+                                    </Button>
+                                </Button.Group>
+                            </Table.Cell>
+                        </Table.Row>)
+                    })
+                }
+            </Table.Body>
+        </Table>
+    </div>)
 }
 
 export default TodoList
