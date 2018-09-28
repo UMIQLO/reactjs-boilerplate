@@ -1,20 +1,21 @@
+import _ from 'lodash'
 import {ADD_ITEM, TOGGLE_ITEM, DELETE_ITEM, MARK_ALL_AS_DONE, SORTING} from './actions'
 // init global state
 const initalState = [
     {
-        title: 'Test 1',
+        title: 'M',
         isFinish: false
     }, {
-        title: 'Test 2',
+        title: 'I',
         isFinish: false
     }, {
-        title: 'Test 3',
+        title: 'Z',
         isFinish: false
     }, {
-        title: 'Test 4',
+        title: 'G',
         isFinish: false
     }, {
-        title: 'Test 5',
+        title: 'U',
         isFinish: false
     }
 ]
@@ -52,21 +53,11 @@ const todoAppReducer = (state = initalState, action) => {
             {
                 switch (action.sortType) {
                     case 'aToz':
-                        state.sort((a, b) => {
-                            return a.title > b.title
-                                ? 1
-                                : -1
-                        })
-                        return [...state]
+                        return _.orderBy(state, ['title'], ['asc'])
                     case 'zToa':
-                        state.sort((a, b) => {
-                            return b.title > a.title
-                                ? 1
-                                : -1
-                        })
-                        return [...state]
+                        return _.orderBy(state, ['title'], ['desc'])
                     default:
-                        return [...state]
+                        return state
                 }
             }
         default:
