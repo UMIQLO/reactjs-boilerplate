@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {connect} from 'react-redux'
-import {clickCount} from '../_actions'
+import {clickCount} from '../../_actions'
 
 class App extends React.Component {
     constructor(props) {
