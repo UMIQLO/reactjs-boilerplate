@@ -1,4 +1,4 @@
-import {CLICK_COUNT} from '../_actions'
+import {CLICK_COUNT} from '../_actions/demo.action'
 
 // init global state
 const initalState = {
