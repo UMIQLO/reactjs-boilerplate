@@ -30,9 +30,10 @@ class DrapNDrop extends React.Component {
                     <ListGroup>
                         {
                             files.map((item, index) => {
-                                return (<ListGroupItem>
+                                return (<ListGroupItem key={index}>
                                     {item.name}
-                                    - {item.size} bytes
+                                    - {item.size}
+                                    bytes
                                 </ListGroupItem>)
                             })
                         }
@@ -49,6 +50,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onDrop: (files) => {
+            console.log(files)
             dispatch(dropFile(files))
         }
     }
