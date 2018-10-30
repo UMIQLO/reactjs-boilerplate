@@ -7,7 +7,6 @@ module.exports = {
     ],
     output: {
         path: `${__dirname}/dist`,
-        publicPath: '/',
         filename: 'bundle.js'
     },
     module: {
@@ -16,9 +15,6 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
-            }, {
-                test: /\.html$/,
-                use: ['html-loader']
             }, {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
@@ -36,10 +32,12 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new HtmlWebPackPlugin({
-          title: 'The Minimal React Webpack Babel Setup',
-          filename: 'index.html',
-          template: 'template/template.html',
-          minify: true})
+        new HtmlWebPackPlugin({title: 'The Minimal React Webpack Babel Setup', filename: 'index.html', template: 'template/template.html', minify: true})
     ]
 }
+
+
+// {
+//     test: /\.html$/,
+//     use: ['html-loader']
+// }
