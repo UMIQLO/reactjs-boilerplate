@@ -36,6 +36,10 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new HtmlWebPackPlugin({title: 'The Minimal React Webpack Babel Setup', filename: 'dist/index.html', minify: true})
+        new HtmlWebPackPlugin({
+          title: 'The Minimal React Webpack Babel Setup',
+          filename: 'index.html',
+          template: 'template/template.html',
+          minify: true})
     ]
 }
