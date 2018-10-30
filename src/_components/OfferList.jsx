@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {Input, Row, Col} from 'reactstrap'
+import {Row, Col} from 'reactstrap'
+import Select from 'react-select'
 import {fetchOfferList, selectOffer} from '../_actions/offerList.action'
 import {fetchOfferProdList} from '../_actions/offerProductList.action'
 
@@ -15,9 +16,10 @@ class OfferList extends Component {
         fetchList()
     }
 
-    onSelectChange(event) {
+    onSelectChange(selectedOption) {
+        console.log(`Option selected:`, selectedOption);
         const {selectOffer, fetchOfferProdList} = this.props
-        const offerNo = event.target.value
+        const offerNo = selectedOption.value
         selectOffer(offerNo)
         if (offerNo !== '') {
             fetchOfferProdList(offerNo)
@@ -26,17 +28,14 @@ class OfferList extends Component {
 
     render() {
         const offerList = Array.from(this.props.offerList)
+        const options = offerList.map((item, index) => {
+            const label = `${item.offer_no} | ${item.offer_description}`
+            const value = item.offer_no
+            return {label: label, value: value}
+        })
         return (<Row>
             <Col xs='12'>
-                <Input type='select' onChange={this.onSelectChange}>
-                    <option value=''>=== Please Select ===</option>
-                    {
-                        offerList.map((item, index) => {
-                            const desc = `${item.offer_no} | ${item.offer_description}`
-                            return (<option key={index} value={item.offer_no}>{desc}</option>)
-                        })
-                    }
-                </Input>
+                <Select onChange={this.onSelectChange} options={options}/>
             </Col>
         </Row>)
     }

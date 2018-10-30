@@ -64,7 +64,7 @@ class CustomerList extends React.Component {
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText>{customerList[itemIndex].cust_prefix}</InputGroupText>
                                     </InputGroupAddon>
-                                    <Input type="number" min="1" onChange={this.onChange(item.customer_id)}/>
+                                    <Input type="number" min="1" onInput={this.onChange(item.customer_id)}/>
                                 </InputGroup>
                             </Col>)
                             : ''

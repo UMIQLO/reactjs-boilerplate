@@ -1,4 +1,3 @@
-import _ from 'lodash'
 import {INIT_OFFER_PROD_TO_LIST, SELECT_OFFER_PROD} from '../_actions/offerProductList.action'
 
 const initalState = {
@@ -12,7 +11,8 @@ const offerProductList = (state = initalState, action) => {
             {
                 return {
                     ...state,
-                    offerProdList: action.payload
+                    offerProdList: action.payload,
+                    selectedOfferProd: action.payload[0].offer_product_id
                 }
             }
         case SELECT_OFFER_PROD:
