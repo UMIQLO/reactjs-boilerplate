@@ -12,6 +12,7 @@ class OfferProductList extends React.Component {
     }
 
     onSelectChange(selectedOption) {
+        console.log(selectedOption)
         const {fetchCustList, selectOfferProd} = this.props
         const offerProdNo = selectedOption.value
         if (offerProdNo !== '') {

@@ -14,6 +14,8 @@ import {
 import {connect} from 'react-redux'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSync} from '@fortawesome/free-solid-svg-icons'
 
 class ForecastQTYForm extends Component {
     constructor(props) {
@@ -59,17 +61,20 @@ class ForecastQTYForm extends Component {
     }
 
     render() {
-        const {selectedOffer, selectedOfferProd} = this.props
+        const {selectedOffer, selectedOfferProd, selectedCustList} = this.props
         return (<Container fluid={true}>
             <Row>
-                <Col xs='6'>
-                    <Alert color="primary">Step 1. Select Offer</Alert>
+                <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                    <Alert color="primary">
+                        <span>Step 1. Select Offer</span>
+                        <FontAwesomeIcon className='float-right' icon={faSync}/>
+                    </Alert>
                     <Collapse isOpen={true}>
                         <OfferList/>
                         <hr/>
                     </Collapse>
                 </Col>
-                <Col xs='6'>
+                <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                     <Collapse isOpen={selectedOffer !== ''}>
                         <Alert color="primary">Step 2. Select Offer Product</Alert>
                         <OfferProductList/>
@@ -82,7 +87,7 @@ class ForecastQTYForm extends Component {
                 <CustomerList/>
                 <Row>
                     <Col xs='12'>
-                        <Button color='primary' className='float-right' onClick={this.btnSubmitOnClick}>Submit</Button>
+                        <Button color='primary' className='float-right' onClick={this.btnSubmitOnClick} disabled={selectedOffer !== '' && selectedOfferProd !== '' && selectedCustList.length <= 0}>Submit</Button>
                     </Col>
                 </Row>
             </Collapse>

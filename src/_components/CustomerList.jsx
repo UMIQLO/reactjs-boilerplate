@@ -34,7 +34,7 @@ class CustomerList extends React.Component {
                 {
                     customerList.map((item, index) => {
                         const itemIndex = selectedCustList.findIndex(data => data.customer_id == item.customer_id)
-                        return (<Col xs="1" key={item.customer_id} onClick={onItemClick(item.customer_id)}>
+                        return (<Col xs='6' sm='4' md='2' lg='1' xl='1' key={item.customer_id} onClick={onItemClick(item.customer_id)}>
                             <Alert color={itemIndex !== -1
                                     ? 'success'
                                     : 'dark'}>
@@ -59,7 +59,7 @@ class CustomerList extends React.Component {
                     selectedCustList.map((item, index) => {
                         const itemIndex = customerList.findIndex(data => data.customer_id == item.customer_id)
                         return itemIndex !== -1
-                            ? (<Col xs="2" key={item.customer_id}>
+                            ? (<Col xs='12' sm='6' md='4' lg='2' xl='2' key={item.customer_id}>
                                 <InputGroup>
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText>{customerList[itemIndex].cust_prefix}</InputGroupText>
