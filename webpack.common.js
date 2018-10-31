@@ -24,6 +24,10 @@ module.exports = {
             }, {
                 test: /\.(png|jpg|gif)$/,
                 use: ['file-loader']
+            }, {
+                test: /\.html$/,
+                exclude: /template/,
+                use: ['html-loader']
             }
         ]
     },
@@ -35,9 +39,3 @@ module.exports = {
         new HtmlWebPackPlugin({title: 'The Minimal React Webpack Babel Setup', filename: 'index.html', template: 'template/template.html', minify: true})
     ]
 }
-
-
-// {
-//     test: /\.html$/,
-//     use: ['html-loader']
-// }
