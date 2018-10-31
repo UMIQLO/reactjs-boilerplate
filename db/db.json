@@ -1,0 +1,562 @@
+{
+  "customer": [
+    {
+      "customer_id": 1,
+      "cust_id": 100025,
+      "cust_prefix": "4SEA",
+      "cust_name": "FOUR SEAS MERCANTILE LTD"
+    },
+    {
+      "customer_id": 2,
+      "cust_id": 101602,
+      "cust_prefix": "AEON HK",
+      "cust_name": "AEON TOPVALU (HONG KONG) CO., LIMIT"
+    },
+    {
+      "customer_id": 3,
+      "cust_id": 101598,
+      "cust_prefix": "ANM-SH",
+      "cust_name": "ANIMATE SHANGHAI CO., LTD."
+    },
+    {
+      "customer_id": 4,
+      "cust_id": 101852,
+      "cust_prefix": "AVT",
+      "cust_name": "ART VANTAGE TRADING LIMITED"
+    },
+    {
+      "customer_id": 5,
+      "cust_id": 8110,
+      "cust_prefix": "BAI",
+      "cust_name": "BANDAI AMERICA INC."
+    },
+    {
+      "customer_id": 6,
+      "cust_id": 102024,
+      "cust_prefix": "BCC",
+      "cust_name": "Shenzhen Blue Cat Champion Crown"
+    },
+    {
+      "customer_id": 7,
+      "cust_id": 100006,
+      "cust_prefix": "BEST",
+      "cust_name": "BEST TEAM TRADING LTD."
+    },
+    {
+      "customer_id": 8,
+      "cust_id": 100007,
+      "cust_prefix": "BIG1",
+      "cust_name": "BIG ONE INTERTRADE CO., LTD."
+    },
+    {
+      "customer_id": 9,
+      "cust_id": 101666,
+      "cust_prefix": "BJT",
+      "cust_name": "BEIJING TALENT JOY CULTURAL DEVELOP"
+    },
+    {
+      "customer_id": 10,
+      "cust_id": 8220,
+      "cust_prefix": "BKR",
+      "cust_name": "BANDAI NAMCO KOREA CO LTD"
+    },
+    {
+      "customer_id": 11,
+      "cust_id": 100005,
+      "cust_prefix": "BKT",
+      "cust_name": "BAN KEE TRADING INC"
+    },
+    {
+      "customer_id": 12,
+      "cust_id": 8777,
+      "cust_prefix": "BNE",
+      "cust_name": "BANDAI NAMCO ENTERTAINMENT(AUS)"
+    },
+    {
+      "customer_id": 13,
+      "cust_id": 102021,
+      "cust_prefix": "BSL",
+      "cust_name": "BRIGHT STRATEGY LIMITED"
+    },
+    {
+      "customer_id": 14,
+      "cust_id": 2009,
+      "cust_prefix": "BSZ",
+      "cust_name": "BANDAI (SHENZHEN) CO. LTD."
+    },
+    {
+      "customer_id": 15,
+      "cust_id": 101712,
+      "cust_prefix": "CAM",
+      "cust_name": "CAMTEC MARKETING SERVICES PTE."
+    },
+    {
+      "customer_id": 16,
+      "cust_id": 100012,
+      "cust_prefix": "CCT",
+      "cust_name": "CHINA COOL TOYS CO."
+    },
+    {
+      "customer_id": 17,
+      "cust_id": 100017,
+      "cust_prefix": "DME",
+      "cust_name": "DEAN MEI ENTERPRISE CO. LTD."
+    },
+    {
+      "customer_id": 18,
+      "cust_id": 100020,
+      "cust_prefix": "DMT",
+      "cust_name": "DREAM TOY CO., LTD. (00006)"
+    },
+    {
+      "customer_id": 19,
+      "cust_id": 100019,
+      "cust_prefix": "DNC",
+      "cust_name": "DANIEL & CO."
+    },
+    {
+      "customer_id": 20,
+      "cust_id": 101707,
+      "cust_prefix": "GOGO",
+      "cust_name": "GO GO ENTERTAINMENT CO LTD"
+    },
+    {
+      "customer_id": 21,
+      "cust_id": 100788,
+      "cust_prefix": "GTO",
+      "cust_name": "GTOY'S MARKETING"
+    },
+    {
+      "customer_id": 22,
+      "cust_id": 100033,
+      "cust_prefix": "HBC",
+      "cust_name": "HOBBYCO PTY. LTD."
+    },
+    {
+      "customer_id": 23,
+      "cust_id": 102188,
+      "cust_prefix": "HBC",
+      "cust_name": "HOBBYCO. IMPORT PTY LTD."
+    },
+    {
+      "customer_id": 24,
+      "cust_id": 101458,
+      "cust_prefix": "HZF",
+      "cust_name": "HANGZHOU FANFAN COMIC CULTURE & ART"
+    },
+    {
+      "customer_id": 25,
+      "cust_id": 101599,
+      "cust_prefix": "KC",
+      "cust_name": "KC Distribution Sdn Bhd"
+    },
+    {
+      "customer_id": 26,
+      "cust_id": 100071,
+      "cust_prefix": "KNK",
+      "cust_name": "KIDZ & KITZ CO. LTD."
+    },
+    {
+      "customer_id": 27,
+      "cust_id": 100471,
+      "cust_prefix": "KNK",
+      "cust_name": "WING KEI TRADING CO."
+    },
+    {
+      "customer_id": 28,
+      "cust_id": 100040,
+      "cust_prefix": "LE",
+      "cust_name": "L.E.INTERNATIONAL CORP."
+    },
+    {
+      "customer_id": 29,
+      "cust_id": 100462,
+      "cust_prefix": "MAP",
+      "cust_name": "MAP ACTIVE (THAILAND) LTD"
+    },
+    {
+      "customer_id": 30,
+      "cust_id": 101859,
+      "cust_prefix": "MAX",
+      "cust_name": "Maxsoft Pte. Ltd."
+    },
+    {
+      "customer_id": 31,
+      "cust_id": 100754,
+      "cust_prefix": "MDL",
+      "cust_name": "Medialink Entertainment Limite"
+    },
+    {
+      "customer_id": 32,
+      "cust_id": 100696,
+      "cust_prefix": "MEG",
+      "cust_name": "EVERWELL INTERNATIONAL LIMITED"
+    },
+    {
+      "customer_id": 33,
+      "cust_id": 100052,
+      "cust_prefix": "MGR",
+      "cust_name": "MEGA RIDGE INT'L CO. LTD."
+    },
+    {
+      "customer_id": 34,
+      "cust_id": 100547,
+      "cust_prefix": "MGS",
+      "cust_name": "MEGASEA CO., LTD."
+    },
+    {
+      "customer_id": 35,
+      "cust_id": 100781,
+      "cust_prefix": "MKD",
+      "cust_name": "MEI KEE DEVELOPMENT LTD"
+    },
+    {
+      "customer_id": 36,
+      "cust_id": 100053,
+      "cust_prefix": "MMC",
+      "cust_name": "MIGHTY MEDIA CO. LTD."
+    },
+    {
+      "customer_id": 37,
+      "cust_id": 8380,
+      "cust_prefix": "NAMCO",
+      "cust_name": "NAMCO ENTERPRISES ASIA LTD."
+    },
+    {
+      "customer_id": 38,
+      "cust_id": 101891,
+      "cust_prefix": "PBCN",
+      "cust_name": "NTT Data Hong Kong Limited"
+    },
+    {
+      "customer_id": 39,
+      "cust_id": 101101,
+      "cust_prefix": "PBHK",
+      "cust_name": "PAYPAL HONG KONG LTD"
+    },
+    {
+      "customer_id": 40,
+      "cust_id": 2007,
+      "cust_prefix": "PBSG",
+      "cust_name": "BANDAI NAMCO SINGAPORE PTE LTD"
+    },
+    {
+      "customer_id": 41,
+      "cust_id": 2008,
+      "cust_prefix": "PBTW",
+      "cust_name": "BANDAI NAMCO TAIWAN CO LTD"
+    },
+    {
+      "customer_id": 42,
+      "cust_id": 101689,
+      "cust_prefix": "PNC",
+      "cust_name": "PHUONG NGA TOYS PROD. SER."
+    },
+    {
+      "customer_id": 43,
+      "cust_id": 100789,
+      "cust_prefix": "PTEMY",
+      "cust_name": "PT. EMWAY GLOBALINDO"
+    },
+    {
+      "customer_id": 44,
+      "cust_id": 100842,
+      "cust_prefix": "PTHRO",
+      "cust_name": "PT HERO INDIPUTRA"
+    },
+    {
+      "customer_id": 45,
+      "cust_id": 101685,
+      "cust_prefix": "PTMAP",
+      "cust_name": "PT. MAP AKTIF ADIPERKASA"
+    },
+    {
+      "customer_id": 46,
+      "cust_id": 100060,
+      "cust_prefix": "PTHRO",
+      "cust_name": "PT. MITRA ADIPERKASA TBK"
+    },
+    {
+      "customer_id": 47,
+      "cust_id": 101711,
+      "cust_prefix": "PTMLT",
+      "cust_name": "PT. MULTI SARANA PRIMA NUSANTARA"
+    },
+    {
+      "customer_id": 48,
+      "cust_id": 100002,
+      "cust_prefix": "PTSIN",
+      "cust_name": "PT SINAR CITRA BAHANA CEMERLAN"
+    },
+    {
+      "customer_id": 49,
+      "cust_id": 101830,
+      "cust_prefix": "RTT",
+      "cust_name": "RT TRADING CO., LTD. GUANGZHOU"
+    },
+    {
+      "customer_id": 50,
+      "cust_id": 100531,
+      "cust_prefix": "RYD",
+      "cust_name": "RE-YI DISTRIBUTION SERVICE CO., LTD"
+    },
+    {
+      "customer_id": 51,
+      "cust_id": 102053,
+      "cust_prefix": "SHH",
+      "cust_name": "SHANGHAI HENGMA IMPORT &"
+    },
+    {
+      "customer_id": 52,
+      "cust_id": 101168,
+      "cust_prefix": "SHJ",
+      "cust_name": "SHANGHAI JINGKUAN TRADING CO LTD"
+    },
+    {
+      "customer_id": 53,
+      "cust_id": 100566,
+      "cust_prefix": "SHT",
+      "cust_name": "SHANGHAI TUOHUA TRADING CO., LTD."
+    },
+    {
+      "customer_id": 54,
+      "cust_id": null,
+      "cust_prefix": "SJT",
+      "cust_name": "SANJIAO TOYS CO LTD"
+    },
+    {
+      "customer_id": 55,
+      "cust_id": 102023,
+      "cust_prefix": "SPT",
+      "cust_name": "SIMPLY TOYS WHOLESALE"
+    },
+    {
+      "customer_id": 56,
+      "cust_id": 101539,
+      "cust_prefix": "STH",
+      "cust_name": "SOOTANG HOBBY (HK) COMMERCIAL"
+    },
+    {
+      "customer_id": 57,
+      "cust_id": 100064,
+      "cust_prefix": "STT",
+      "cust_name": "SHENG TAI TOYS PTE LTD."
+    },
+    {
+      "customer_id": 58,
+      "cust_id": 100042,
+      "cust_prefix": "SUN",
+      "cust_name": "GREAT SUNWAY ENTERPRISE LTD"
+    },
+    {
+      "customer_id": 59,
+      "cust_id": null,
+      "cust_prefix": "TBA",
+      "cust_name": "Cash Sales"
+    },
+    {
+      "customer_id": 60,
+      "cust_id": 101137,
+      "cust_prefix": "TFH",
+      "cust_name": "THE FALCON'S HANGAR PTE LTD"
+    },
+    {
+      "customer_id": 61,
+      "cust_id": 100796,
+      "cust_prefix": "TNT",
+      "cust_name": "TOYNTOYS LOGISTICS CO HK"
+    },
+    {
+      "customer_id": 62,
+      "cust_id": 101795,
+      "cust_prefix": "UNQ-TW",
+      "cust_name": "UNIQLO TAIWAN LTD."
+    },
+    {
+      "customer_id": 63,
+      "cust_id": 100067,
+      "cust_prefix": "WEI",
+      "cust_name": "WEI YAO ENTERPRISE CO., LTD."
+    },
+    {
+      "customer_id": 64,
+      "cust_id": 100069,
+      "cust_prefix": "WJT",
+      "cust_name": "WANG JUNG TOY CO. LTD."
+    },
+    {
+      "customer_id": 65,
+      "cust_id": 100510,
+      "cust_prefix": "WKR",
+      "cust_name": "WEICKER CO., LTD."
+    },
+    {
+      "customer_id": 66,
+      "cust_id": 101519,
+      "cust_prefix": "WLA",
+      "cust_name": "WAH LAP AMUSEMENT MACHINE CO."
+    },
+    {
+      "customer_id": 67,
+      "cust_id": 100449,
+      "cust_prefix": "WMP",
+      "cust_name": "WING MAU PRODUCTS DEVELOPMENT LTD."
+    },
+    {
+      "customer_id": 68,
+      "cust_id": 102187,
+      "cust_prefix": "WOC",
+      "cust_name": "WORLD OF CARDS"
+    },
+    {
+      "customer_id": 69,
+      "cust_id": 100796,
+      "cust_prefix": "TNT",
+      "cust_name": "TOYNTOYS LOGISTICS CO HK"
+    },
+    {
+      "customer_id": 70,
+      "cust_id": 101712,
+      "cust_prefix": "CTM",
+      "cust_name": "CAMTEC MARKETING SERVICES PTE. LTD."
+    },
+    {
+      "customer_id": 71,
+      "cust_id": 101643,
+      "cust_prefix": "KGA",
+      "cust_name": "KAGA AMUSEMENT MALAYSIA SDN. BHD."
+    },
+    {
+      "customer_id": 72,
+      "cust_id": 8770,
+      "cust_prefix": "BLP",
+      "cust_name": "BANDAI LOGIPAL (H. K. ) LTD"
+    },
+    {
+      "customer_id": 73,
+      "cust_id": 102491,
+      "cust_prefix": "HZM",
+      "cust_name": "HANGZHOU MIMENG CULTURE AND CREATIV"
+    },
+    {
+      "customer_id": 74,
+      "cust_id": 200001,
+      "cust_prefix": "HK",
+      "cust_name": "HK"
+    },
+    {
+      "customer_id": 75,
+      "cust_id": 200002,
+      "cust_prefix": "TH",
+      "cust_name": "TH"
+    },
+    {
+      "customer_id": 76,
+      "cust_id": 200003,
+      "cust_prefix": "VN",
+      "cust_name": "VN"
+    },
+    {
+      "customer_id": 77,
+      "cust_id": 200004,
+      "cust_prefix": "KR",
+      "cust_name": "KR"
+    },
+    {
+      "customer_id": 78,
+      "cust_id": 200005,
+      "cust_prefix": "TW",
+      "cust_name": "TW"
+    },
+    {
+      "customer_id": 79,
+      "cust_id": 200006,
+      "cust_prefix": "CH",
+      "cust_name": "CH"
+    },
+    {
+      "customer_id": 80,
+      "cust_id": 200007,
+      "cust_prefix": "CH(EC) ",
+      "cust_name": "CH(EC) "
+    },
+    {
+      "customer_id": 81,
+      "cust_id": 200008,
+      "cust_prefix": "SG",
+      "cust_name": "SG"
+    },
+    {
+      "customer_id": 82,
+      "cust_id": 200009,
+      "cust_prefix": "MY",
+      "cust_name": "MY"
+    },
+    {
+      "customer_id": 83,
+      "cust_id": 200010,
+      "cust_prefix": "ID",
+      "cust_name": "ID"
+    },
+    {
+      "customer_id": 84,
+      "cust_id": 200011,
+      "cust_prefix": "PH",
+      "cust_name": "PH"
+    },
+    {
+      "customer_id": 85,
+      "cust_id": 200012,
+      "cust_prefix": "AU",
+      "cust_name": "AU"
+    },
+    {
+      "customer_id": 86,
+      "cust_id": 200013,
+      "cust_prefix": "NZ",
+      "cust_name": "NZ"
+    },
+    {
+      "customer_id": 87,
+      "cust_id": 200014,
+      "cust_prefix": "India",
+      "cust_name": "India"
+    },
+    {
+      "customer_id": 88,
+      "cust_id": 200015,
+      "cust_prefix": " HK 2",
+      "cust_name": " HK 2"
+    },
+    {
+      "customer_id": 89,
+      "cust_id": 200016,
+      "cust_prefix": "WEB TW",
+      "cust_name": "WEB TW"
+    },
+    {
+      "customer_id": 90,
+      "cust_id": 200017,
+      "cust_prefix": "SG 2",
+      "cust_name": "SG 2"
+    },
+    {
+      "customer_id": 91,
+      "cust_id": 200018,
+      "cust_prefix": "WEB CN",
+      "cust_name": "WEB CN"
+    },
+    {
+      "customer_id": 92,
+      "cust_id": 200019,
+      "cust_prefix": "WEB OT",
+      "cust_name": "WEB OT"
+    },
+    {
+      "customer_id": 93,
+      "cust_id": 200020,
+      "cust_prefix": "OTH",
+      "cust_name": "OTH"
+    }
+  ]
+}
