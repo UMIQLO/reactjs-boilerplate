@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import {ON_CUST_SELECT, INIT_CUST_TO_LIST, LIST_FORM_SUBMIT, UPDATE_SELECT_CUST_QTY} from '../_actions/customerList.action';
 // init global state
 const initalState = {

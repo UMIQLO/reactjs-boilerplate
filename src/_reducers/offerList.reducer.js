@@ -1,4 +1,3 @@
-import _ from 'lodash'
 import {INIT_OFFER_TO_LIST, SELECT_OFFER} from '../_actions/offerList.action'
 
 const initalState = {
