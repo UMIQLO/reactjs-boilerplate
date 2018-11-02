@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux'
-import demo from './demo.reducer'
+import yearSelect from './yearSelect.reducer'
+import officeSelect from './officeSelect.reducer'
+import countrySelect from './countrySelect.reducer'
 
-const rootReducer = combineReducers({demo: demo});
+const rootReducer = combineReducers({yearSelect: yearSelect, officeSelect: officeSelect, countrySelect: countrySelect});
 export default rootReducer;
